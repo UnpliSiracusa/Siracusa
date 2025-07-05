@@ -1,0 +1,1379 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #004F9F;
+    color: #EDF7FD;
+  }
+  
+  /* Font Styles */
+  h1, h2, h3, .dm-serif-display-regular, .dm-serif-display-regular-italic {
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .dm-serif-display-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-display-regular-italic {
+    font-style: italic;
+  }
+  
+  p, .split-text p {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .hero-text-top strong,
+.split-text p strong {
+  font-weight: 600;  /* o 700 per grassetto forte */
+}
+  /* Menu */
+  .menu {
+    background-color: #EDF7FD !important;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .menu nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu nav ul li a {
+    color: #1893d1 !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease;
+  }
+  
+  .menu nav ul li a:hover {
+    color: #81C7EA !important;
+  }
+  
+  /* Hero Header */
+  h1 {
+    font-weight: 700 !important;
+    font-size: 10em !important;
+    color: #EDF7FD !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 200px;
+    text-align: center;
+  }
+  
+  p.montserrat-text {
+    font-size: 18px !important;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 40px auto 0;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    width: 80%;
+    max-width: 1000px;
+    text-shadow: 8px 8px 25px rgba(0, 0, 0, 0.8);
+  }
+
+  #background-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url('COPERTINA.png') center / cover fixed;
+  position: relative;
+  box-sizing: border-box;
+  /* Rimuovi il flex centrale */
+  padding: 0;
+  text-align: left;
+}
+
+/* Overlay */
+#background-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+ 
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Titolo in basso a sinistra */
+#background-container h1 {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  margin: 0;
+  font-size: 3em;
+  color: #EDF7FD;
+  z-index: 2;
+  text-align: left;
+}
+
+/* Testo in alto a destra */
+#background-container p {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  margin: 0;
+  font-size: 1.5em;
+  color: #EDF7FD;
+  z-index: 2;
+  text-align: right;
+  max-width: 40vw;
+}
+
+  
+  /* Banner Terra */
+  .banner-terra {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('collage-duomo\,-castello-maniace\,-anfiteatro.png') center / cover no-repeat;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .terra.title {
+    font-size: 60px !important;
+    color: #004F9F;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .banner-description {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #EDF7FD;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: center;
+  }
+ .duomo-fullscreen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('duomo-modificato.png') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.duomo-title {
+  position: absolute;
+  top: 16px;         /* Vicino al bordo superiore */
+  left: 160px;        /* Vicino al bordo sinistro */
+  color: #edf7ed;
+   font-size: 56px  !important;   /* Titolo piccolo */
+  font-family: 'DM Serif Display', serif;
+  margin: 0;
+  z-index: 2;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.duomo-overlay {
+  color: #edf7ed;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: left;
+  max-width: 700px;
+
+  font-family: "Montserrat";
+}
+
+.duomo-overlay p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-family: 'DM Sans', sans-serif;
+}
+
+  
+ /* Castello Svevo Hero */
+#castello-svevo-fullscreen.hero-castello {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('santuario.png') center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  color: #EDF7FD;
+  box-sizing: border-box;
+}
+
+.hero-text-top {
+  position: absolute;
+  top: 120px;
+  left: 50px; /* Spostato più a sinistra */
+  max-width: 700px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  text-align: left; /* Allineamento a sinistra */
+  font-size: 20px; /* Aumentato da default (es. 16px) a 20px */
+  font-weight: 200;
+}
+
+.hero-title-bottom-left {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  text-align: left;
+  letter-spacing: -2px;
+}
+
+.hero-title-bottom-left h2 {
+  font-size: 90px; /* Rimpicciolito da 140px */
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-title-bottom-left span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Split Sections */
+.split-text h2 {
+  font-size: 54px;
+  color: #EDF7FD;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  line-height: 1.1;
+}
+
+.split-text p {
+  font-size: 18px;
+  color: #EDF7ED;
+  line-height: 1.7em;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.split-text,
+.split-image {
+  padding: 30px;
+}
+
+.split-image {
+  flex: 1;
+  width: 50%;
+  text-align: center;
+}
+
+.split-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 20px;
+  object-fit: cover;
+}
+
+.split-text.porta-spagnola {
+  margin-left: 100px;
+}
+
+.split-text.san-domenico {
+  margin-right: 100px;
+}
+
+.split-image.porta-spagnola {
+  margin-right: 150px;
+}
+
+.split-image.san-domenico {
+  margin-left: 150px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6em !important;
+  }
+
+  .terra.title {
+    font-size: 10em;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 80px; /* Ridotto per tablet */
+  }
+
+  .hero-title-bottom-left .word {
+    width: 280px;
+  }
+
+  .banner-content {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+  }
+
+  .hero-text-top {
+    left: 30px; /* Spostato ancora più a sinistra per schermi medi */
+  }
+}
+
+@media (max-width: 768px) {
+  .menu nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .menu nav ul {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu nav ul li a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  h1 {
+    font-size: 4em !important;
+  }
+
+  p.montserrat-text {
+    font-size: 16px !important;
+    padding: 0 10px;
+    width: 95%;
+  }
+
+  .terra.title {
+    font-size: 5em;
+  }
+
+  .banner-content {
+    top: 40px;
+  }
+
+  .banner-description {
+    font-size: 1.3em;
+    padding: 0 20px;
+  }
+
+  .split-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split-text {
+    padding-bottom: 20px;
+  }
+
+  .split-image {
+    padding-top: 20px;
+  }
+
+  .hero-text-top {
+    top: 140px;
+    left: 20px; /* Ancora più a sinistra su dispositivi piccoli */
+    max-width: 90%;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 60px; /* Ridotto ulteriormente */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title-bottom-left h2 {
+    font-size: 50px;
+  }
+
+  .hero-title-bottom-left .word {
+    width: 200px;
+  }
+
+  .hero-title-bottom-left {
+    left: 30px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu nav ul li a {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  p.montserrat-text {
+    font-size: 14px !important;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .terra.title {
+    font-size: 3em;
+  }
+
+  .banner-content {
+    top: 20px;
+  }
+
+  .banner-description {
+    font-size: 1.1em;
+    padding: 0 10px;
+  }
+
+  .hero-text-top {
+    top: 100px;
+    left: 15px;
+    max-width: 90%;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+.santa-lucia-section {
+  background-color: #004F9F; /* blu scuro elegante */
+  color: #EDF7ED;
+  padding: 80px 20px;
+  text-align: left;  /* Modificato da 'center' a 'left' */
+  position: relative;
+   padding: 0 20px 80px 20px; /* Rimosso tutto il padding-top */
+}
+
+.santa-lucia-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Allineato a sinistra */
+}
+
+.santa-lucia-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: left;  /* Aggiunto per allineare il testo a sinistra */
+}
+
+.santa-lucia-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.small-text {
+  font-size: 32px;  /* Ingrandito */
+  display: block;
+  text-align: left;  /* Aggiunto per allineare il testo a sinistra */
+  margin-bottom: -10px;  /* Aggiunto margine negativo per avvicinare al titolo successivo */
+   margin-top: -160px; /* Spostato il titolo ancora più in alto sopra l'immagine */
+   z-index: 1;
+   margin-left: -80px;
+}
+
+.large-text {
+  font-size: 42px;  /* Ingrandito */
+  white-space: nowrap;  /* non va a capo */
+  display: block;
+  margin-top: -10px; /* Aggiunto margine negativo per avvicinare al titolo precedente */
+  line-height: 1.1;   /* Distanza tra le righe più compatta */
+  text-align: left;  /* Aggiunto per allineare il testo a sinistra */
+  z-index: 1;
+  margin-left: -80px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.section-saline {
+  background-color: #004F9F; /* sfondo chiaro, puoi cambiare */
+  padding: 20px;
+  max-width: 600px; /* larghezza massima, opzionale */
+  margin: 0 auto; /* centra la sezione */
+  text-align: center; /* centra testo e immagine */
+}
+
+.saline-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #EDF7ED;
+  font-family: "DM Serif Display";
+}
+
+.saline-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:#EDF7ED;
+  line-height: 1.6;
+  font-family: "Montserrat";
+  text-align: left;
+}
+
+.saline-image-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.saline-image {
+  width: 120%;   /* Aumentato per fare l'immagine più grande */
+  height: auto;
+  border-radius: 8px; /* angoli arrotondati */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: -10%; /* per centrare meglio l'immagine dopo l'aumento */
+}
+
+
+/* Stile del banner Cultura con immagine di sfondo */
+.banner-cultura {
+    position: relative; /* Assicurati che il banner sia il contenitore di riferimento per il posizionamento assoluto */
+    height: 100vh; /* Imposta l'altezza a schermo intero */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('annunciazione-\ bellomo.jpeg'); /* Aggiungi il percorso della tua immagine */
+    background-size: cover; /* L'immagine coprirà l'intero banner */
+    background-position: center; /* Posiziona l'immagine al centro */
+    background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+}
+
+.banner-content {
+    position: absolute;
+    top: 20px; /* Puoi regolare questa distanza per alzare il titolo */
+    left: 15%; /* Posizionamento centrale orizzontale */
+    transform: translateX(-50%); /* Centra orizzontalmente */
+    z-index: 2; /* Assicurati che il titolo sia sopra all'immagine */
+}
+
+.cultura-title {
+    font-size: 60px; /* Grandezza del titolo */
+    color: #EDF7FD; /* Colore del testo (bianco chiaro per contrastare il blu) */
+    margin: 0;
+    font-family: 'DM Serif Display', serif; /* Font elegante */
+    text-align: center; /* Allinea il testo al centro */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Aggiungi ombra al testo per farlo risaltare */
+}
+
+/* Descrizione del banner - centrata in basso e spostata più al centro */
+.banner-description {
+    position: absolute;
+    bottom: 30px; /* Regola la distanza per posizionarlo più in alto o in basso */
+    left: 50%; /* Posizionamento centrale orizzontale */
+    transform: translateX(-50%); /* Centra esattamente la descrizione */
+    font-size: 2em;
+    color: #EDF7FD !important;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Ombra leggera per visibilità */
+    font-weight: bold; /* Rende il testo in grassetto */
+}
+
+.latomie-fullscreen {
+  min-height: 100vh;
+  width: 100vw;
+  background: #004F9F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.latomie-title {
+  color: #edf7ed;
+  font-family: 'DM Serif Display', serif;
+  font-size: 52px !important;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.latomie-img {
+  display: block;
+  margin: 0 auto 28px auto;
+  width: 640px;         /* Foto più grande */
+  max-width: 100%;      /* Non supera la larghezza del contenitore */
+  height: auto;
+  border-radius: 18px;
+}
+
+
+
+.latomie-desc {
+  color: #edf7ed;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+
+  padding: 22px 18px;
+  border-radius: 14px;
+  max-width: 700px;
+  margin-top: 0;
+}
+
+/* Stile per la sezione Tradizioni */
+
+.banner-tradizioni {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Modifica l’altezza per fare in modo che l'immagine si adatti meglio */
+  background-image: url('interni-bellomo.jpg');
+    background-size: cover; /* Fa sì che l'immagine copra la sezione senza distorsioni */
+    background-position: center top; /* Centra l'immagine orizzontalmente e sposta la parte superiore verso l'alto */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EDF7FD; /* Colore del testo */
+}
+.banner-tradizioni::before {
+    content: ''; /* Necessario per creare un pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Usa l'immagine di sfondo della sezione */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px) brightness(0.8); /* Sfoca leggermente e aumenta la luminosità */
+    background-color: rgba(0, 0, 0, 0.3); /* Aggiunge un overlay semi-trasparente scuro */
+    z-index: -1; /* Posiziona lo sfondo dietro il contenuto */
+}
+
+.lucia-section {
+  min-height: 100vh;
+  width: 100vw;
+  background: #fab53b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.lucia-title {
+  font-family: 'DM Serif Display', serif;
+  color: #edf7ed;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.lucia-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.lucia-img {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.lucia-content {
+  color:#4c5052;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 700px;
+  text-align: left;
+
+  padding: 22px 18px;
+  border-radius: 14px;
+}
+
+.martirio-section {
+  min-height: 100vh;
+  width: 100vw;
+  background: #fab53b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 0 40px 0;
+}
+
+.martirio-content {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #4c5052;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.martirio-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.martirio-img {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+.martirio-title {
+  position: absolute;
+  left: 600px;  /* aumenta questo valore per spostare il titolo più a destra */
+  bottom: 32px;
+  font-family: 'DM Serif Display', serif;
+  color: #EDF7ED;
+  font-size: 42px;
+  text-align: left;
+  margin: 0;
+  letter-spacing: 1px;
+}
+.occhi-santa-section {
+  min-height: 60vh;
+  width: 100vw;
+  background: #fab53b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.occhi-santa-header {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.occhi-santa-title {
+  font-family: 'DM Serif Display', serif;
+  color: #EDF7FD;
+  font-size: 48px; /* Ingrandito il titolo */
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.occhi-santa-desc {
+  color: #4c5052;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+.occhi-santa-header {
+  max-width: 900px; /* oppure 100%, se vuoi senza limiti */
+}
+.occhi-santa-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centra l'immagine */
+}
+
+.occhi-santa-image {
+  display: block;
+  width: 800px !important;         /* aumentata la larghezza */
+  max-width: 100% !important;      /* resta responsive */
+  height: auto !important;
+  margin: 0 auto 32px auto !important;
+  border-radius: 8px !important;
+}
+
+
+
+.zuppa-section {
+  min-height: 100vh;
+  width: 100vw;
+  background: #fab53b; /* giallo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 100px;
+}
+
+.zuppa-header {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.zuppa-title {
+  font-family: 'DM Serif Display', serif;
+  color: #EDF7ED;
+  font-size: 48px;
+  margin: 0 0 16px 0;
+  letter-spacing: 1px;
+}
+
+.zuppa-desc {
+  color:#4c5052;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.zuppa-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zuppa-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+
+
+/* Contenuto del banner */
+.banner-content {
+    text-align: center;
+    color: #EDF7FD; /* Colore del testo bianco */
+    max-width: 80%; /* Imposta una larghezza massima per il contenuto */
+    padding: 20px;
+    font-size: 32px;
+}
+.ortigia-fullscreen {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url('Ortigia-copertina_2.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ortigia-title {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  right: auto;
+  color: #edf7ed;
+  font-family: 'DM Serif Display', serif;
+  font-size: 48px;
+  text-align: right;
+  margin: 0;
+  z-index: 2;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.ortigia-content {
+  z-index: 1;
+  max-width: 700px;
+
+  color: #edf7ed;
+  padding: 40px 32px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.6;
+
+}
+.maniace-section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #004F9F;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.maniace-title {
+  font-family: 'DM Serif Display', serif;
+  color: #edf7ed;
+  font-size: 48px;
+  margin-bottom: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.maniace-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.maniace-img {
+  display: block;
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+.maniace-content {
+  color: #edf7ed;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 700px;
+ text-align: left;
+  padding: 22px 18px;
+  border-radius: 14px;
+}
+
+.giudecca-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 70vh;
+  width: 100vw;
+  background: #004F9F;
+  padding: 40px 0 40px 420px; /* aumenta qui per spostare ancora più a destra */
+  box-sizing: border-box;
+    margin-top: 90px; /* aggiungi questa riga per abbassare la sezione */
+}
+
+.giudecca-img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-left: 0;     /* togli o riduci questo valore */
+  margin-right: 40px;
+  height: 100%;
+}
+
+.giudecca-img {
+  width: 450px;
+  max-width: 90vw;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.22);
+  margin-bottom: 18px;
+}
+.giudecca-title {
+  color: #edf7ed;
+  font-family: 'DM Serif Display', serif;
+  font-size: 44px;
+  margin: -80px 0 0 0; /* margine superiore negativo */
+  text-align: left;
+}
+
+.giudecca-content {
+  flex: 1;
+  color: #edf7ed;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 600px;
+ text-align: left;
+  padding: 32px 24px;
+  border-radius: 14px;
+  margin-right: 40px;
+  margin-top: -40px;
+}
+
+
+/* Stile per il footer */
+.footer {
+  background-color: #1893d1;
+  padding: 40px 20px;
+  color: #EDF7FD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 5px solid #1168bf; /* Linea sottile di separazione */
+}
+
+/* Contenitore delle due colonne */
+.footer-contenuto {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Comportamento responsive */
+  align-items: stretch; /* Allinea le colonne in alto */
+}
+
+/* Colonne singole */
+.footer-colonna {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start; /* Centra gli elementi all'interno della colonna */
+  justify-content: flex-start;
+  width: 45%;
+  text-align: left;
+  min-height: 350px; /* Altezza minima per evitare colonne troppo corte */
+}
+
+/* Titolo e logo */
+.header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra titolo e logo */
+  text-align: center;
+  margin-bottom: 40px; /* Spazio uniforme tra logo/titolo e contatti */
+}
+
+.header-block h3 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.header-block img {
+  display: block;
+  margin: 10px auto 40px auto; /* Centra orizzontalmente */
+  width: 80px; /* Ridotto a 80px per uniformarlo */
+  height: auto;
+}
+
+
+/* Righe contatto (icona + testo) */
+.contact-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px; /* Distanza tra le righe di contatto */
+}
+
+/* Icone */
+.contact-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  min-width: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Testo contatti */
+.contact-item span,
+.contact-item a {
+  font-size: 16px;
+  color: #EDF7FD;
+  text-decoration: none;
+  vertical-align: middle; /* Allineamento verticale */
+}
+.footer-colonna {
+    text-align: left; /* Uniforma l'allineamento */
+}
+/* Allineamento verticale dei contatti */
+.footer-colonna .contact-item {
+  margin-top: -5px; /* Rimuove margini extra tra i contatti */
+}
+
+/* Allineamento preciso per i contatti */
+.footer-colonna:last-of-type .contact-item:first-of-type {
+  margin-top: -5px; /* Abbassa leggermente la prima riga dei contatti di Siracusa */
+}
+
+/* Colonna Pro Loco Marzamemi */
+.footer-colonna:first-of-type {
+  margin-bottom: 0px; /* Nessuna distanza extra per Marzamemi */
+  text-align: left;
+}
+
+/* Colonna Pro Loco Siracusa */
+.footer-colonna:last-of-type {
+  margin-top: 0px; /* Nessuna distanza extra per Siracusa */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Allinea verticalmente la colonna con Marzamemi */
+  text-align: left;
+}
+
+/* Footer basso */
+.footer-basso {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.footer-basso p {
+  margin: 5px 0;
+}
+
+.footer-basso a {
+  color: #EDF7FD;
+  text-decoration: none;
+}
+
+.footer-basso a:hover {
+  text-decoration: underline;
+}
+
+.contact-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-item:hover {
+    opacity: 0.8;
+    transform: translateX(5px); /* Spostamento leggero verso destra */
+}
+
+
+
+.header-block h3 {
+    font-size: 38px; /* Aumentato il font-size per il titolo */
+    font-weight: 700;
+}
+
+.contact-item span, .contact-item a {
+    font-size: 16px; /* Aumentato il font-size per migliorare la leggibilità */
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+  .footer-contenuto {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Diminuisce lo spazio tra le colonne sui dispositivi mobili */
+  }
+
+  .footer-colonna {
+    width: 80%; /* Le colonne occupano più spazio su dispositivi più piccoli */
+    text-align: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+  }
+
+  .header-block img {
+    width: 70px; /* Riduce le dimensioni del logo sui dispositivi mobili */
+  }
+}
+
+
+
+/* Responsiveness: quando la larghezza della finestra è più piccola di 768px */
+@media (max-width: 768px) {
+  .footer-contenuto {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 20px;
+  }
+
+  .footer-colonna {
+      width: 100%; /* Le colonne occupano l'intera larghezza */
+      text-align: center;
+  }
+
+  .header-block img {
+      width: 80px; /* Riduce la larghezza dei loghi sui dispositivi mobili */
+  }
+
+  .contact-item {
+      max-width: 100%;
+      text-align: center;
+  }
+}
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .footer-contenuto {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .footer-colonna {
+        align-items: center;
+        width: 80%;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+.sponsor-carousel {
+  overflow: hidden;
+  background-color: #1893d1;
+  padding: 30px 0;
+  text-align: center; /* Centra il contenuto incluso il titolo */
+}
+
+.sponsor-carousel h4 {
+  margin-bottom: 24px; /* Distanza sotto il titolo */
+  color: #EDF7FD; /* colore testo */
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem; /* Aumentato */
+}
+
+.sponsor-track {
+  display: flex;
+  animation: scroll-sponsors 25s linear infinite; /* durata aumentata da 12s a 30s per rallentare */
+  justify-content: center;
+}
+
+.sponsor-track a img {
+  height: 60px;
+  margin: 0 30px;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.sponsor-track a:hover img {
+  opacity: 0.5;
+}
+
+@keyframes scroll-sponsors {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes scroll-sponsors {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Bottone */
+
+/* Stili per il bottone "Torna su" */
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px; /* Posizione del bottone in basso */
+    right: 20px;  /* Posizione del bottone a destra */
+    background-color: #edf7ed; /* Colore di sfondo del bottone */
+    color: #004F9F; /* Colore dell'icona */
+    border-radius: 50%; /* Bottone circolare */
+    padding: 10px; /* Distanza attorno all'icona */
+    opacity: 0; /* Il bottone sarà inizialmente invisibile */
+    transition: opacity 0.3s ease; /* Animazione per l'opacità */
+    z-index: 1000; /* Assicura che il bottone sia sopra altri elementi */
+    cursor: pointer; /* Cursore a forma di mano per indicare cliccabile */
+}
+
+/* Quando si scorre verso il basso e il bottone è visibile */
+.back-to-top.show {
+    opacity: 1; /* Il bottone diventa visibile */
+}
+
+/* Stile per l'icona della freccia */
+.back-to-top svg {
+    width: 24px; /* Dimensione dell'icona */
+    height: 24px;
+    fill: #81C7EA /* Colore dell'icona */
+}
+
+/* Cambia colore quando si passa sopra il bottone */
+.back-to-top:hover {
+    background-color: #81C7EA; /* Colore di hover */
+}
+
+
+
+
+
+
+
+
+
+
+
