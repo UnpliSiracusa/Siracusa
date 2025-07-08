@@ -314,8 +314,6 @@ html, body {
     gap: 20px;
   }
 }
-
-
 /* Castello Svevo Hero */
 #castello-svevo-fullscreen.hero-castello {
   position: relative;
@@ -564,6 +562,70 @@ html, body {
     font-size: 40px;
   }
 }
+
+/* Migliora leggibilità testo santuario su mobile */
+@media (max-width: 768px) {
+  #castello-svevo-fullscreen.hero-castello {
+    position: relative;
+  }
+
+  #castello-svevo-fullscreen.hero-castello::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* overlay più scuro */
+    z-index: 1;
+  }
+
+  .hero-text-top {
+    position: relative; /* per stare sopra overlay */
+    z-index: 2;
+    font-size: 18px !important;
+    color: #f0f8ff !important;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.9);
+    max-width: 90% !important;
+    left: 20px !important;
+    top: 100px !important;
+  }
+
+  .hero-title-bottom-left {
+    position: relative; /* sopra overlay */
+    z-index: 2;
+    left: 50px !important;
+    bottom: 40px !important;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 60px !important;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  #castello-svevo-fullscreen.hero-castello::before {
+    background: rgba(0, 0, 0, 0.75); /* overlay ancora più scuro */
+  }
+
+  .hero-text-top {
+    font-size: 16px !important;
+    left: 15px !important;
+    top: 90px !important;
+    max-width: 95% !important;
+    color: #fff !important;
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 1);
+  }
+
+  .hero-title-bottom-left {
+    left: 15px !important;
+    bottom: 30px !important;
+  }
+
+  .hero-title-bottom-left h2 {
+    font-size: 40px !important;
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 1);
+  }
+}
+
 
 .santa-lucia-section {
   background-color: #004F9F; /* blu scuro elegante */
