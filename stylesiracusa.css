@@ -216,8 +216,107 @@ html, body {
   font-family: 'DM Sans', sans-serif;
 }
 
-  
- /* Castello Svevo Hero */
+/* Responsive: Mobile & Tablet */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5em !important;
+    margin-bottom: 100px;
+  }
+
+  p.montserrat-text {
+    font-size: 16px !important;
+    width: 90%;
+    padding: 0 10px;
+  }
+
+  .menu nav ul {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .menu nav ul li a {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  /* Background container adjustments */
+  #background-container h1 {
+    font-size: 2em;
+    left: 15px;
+    bottom: 20px;
+    text-align: left;
+  }
+
+  #background-container p {
+    font-size: 1.2em;
+    right: 15px;
+    top: 15px;
+    max-width: 80vw;
+    text-align: right;
+  }
+
+  /* Banner Terra section */
+  .terra.title {
+    font-size: 36px !important;
+    text-align: center;
+  }
+
+  .banner-description {
+    font-size: 1.2em;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Duomo section */
+  .duomo-title {
+    font-size: 28px !important;
+    left: 20px;
+    top: 20px;
+  }
+
+  .duomo-overlay {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .duomo-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Extra small devices (phones under 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3em !important;
+  }
+
+  .menu nav {
+    padding: 0 15px;
+  }
+
+  .banner-description {
+    font-size: 1em;
+  }
+
+  .duomo-title {
+    font-size: 24px !important;
+    left: 15px;
+    top: 15px;
+  }
+
+  #background-container p {
+    font-size: 1em;
+    max-width: 90vw;
+  }
+
+  .menu nav ul {
+    gap: 20px;
+  }
+}
+
+
+/* Castello Svevo Hero */
 #castello-svevo-fullscreen.hero-castello {
   position: relative;
   width: 100vw;
@@ -234,13 +333,13 @@ html, body {
 .hero-text-top {
   position: absolute;
   top: 120px;
-  left: 50px; /* Spostato più a sinistra */
+  left: 50px;
   max-width: 700px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-  text-align: left; /* Allineamento a sinistra */
-  font-size: 20px; /* Aumentato da default (es. 16px) a 20px */
+  text-align: left;
+  font-size: 20px;
   font-weight: 200;
 }
 
@@ -253,7 +352,7 @@ html, body {
 }
 
 .hero-title-bottom-left h2 {
-  font-size: 90px; /* Rimpicciolito da 140px */
+  font-size: 90px;
   margin: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   display: flex;
@@ -324,19 +423,15 @@ html, body {
 /* Media Queries */
 @media (max-width: 1024px) {
   h1 {
-    font-size: 6em !important;
+    font-size: 6em;
   }
 
   .terra.title {
-    font-size: 10em;
+    font-size: 4em;
   }
 
   .hero-title-bottom-left h2 {
-    font-size: 80px; /* Ridotto per tablet */
-  }
-
-  .hero-title-bottom-left .word {
-    width: 280px;
+    font-size: 80px;
   }
 
   .banner-content {
@@ -346,7 +441,7 @@ html, body {
   }
 
   .hero-text-top {
-    left: 30px; /* Spostato ancora più a sinistra per schermi medi */
+    left: 30px;
   }
 }
 
@@ -369,17 +464,17 @@ html, body {
   }
 
   h1 {
-    font-size: 4em !important;
+    font-size: 4em;
   }
 
   p.montserrat-text {
-    font-size: 16px !important;
+    font-size: 16px;
     padding: 0 10px;
     width: 95%;
   }
 
   .terra.title {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   .banner-content {
@@ -406,12 +501,16 @@ html, body {
 
   .hero-text-top {
     top: 140px;
-    left: 20px; /* Ancora più a sinistra su dispositivi piccoli */
+    left: 20px;
     max-width: 90%;
   }
 
   .hero-title-bottom-left h2 {
-    font-size: 60px; /* Ridotto ulteriormente */
+    font-size: 60px;
+  }
+
+  .hero-title-bottom-left {
+    left: 50px;
   }
 }
 
@@ -420,13 +519,15 @@ html, body {
     font-size: 50px;
   }
 
-  .hero-title-bottom-left .word {
-    width: 200px;
-  }
-
   .hero-title-bottom-left {
     left: 30px;
     bottom: 20px;
+  }
+
+  .hero-text-top {
+    top: 120px;
+    left: 15px;
+    max-width: 90%;
   }
 }
 
@@ -437,17 +538,17 @@ html, body {
   }
 
   h1 {
-    font-size: 2.5em !important;
+    font-size: 2.5em;
   }
 
   p.montserrat-text {
-    font-size: 14px !important;
+    font-size: 14px;
     padding: 0 10px;
     width: 100%;
   }
 
   .terra.title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .banner-content {
@@ -459,35 +560,11 @@ html, body {
     padding: 0 10px;
   }
 
-  .hero-text-top {
-    top: 100px;
-    left: 15px;
-    max-width: 90%;
-  }
-
   .hero-title-bottom-left h2 {
     font-size: 40px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 }
+
 .santa-lucia-section {
   background-color: #004F9F; /* blu scuro elegante */
   color: #EDF7ED;
@@ -669,6 +746,146 @@ html, body {
   border-radius: 14px;
   max-width: 700px;
   margin-top: 0;
+}
+
+/* Responsive design per sezioni nuove */
+@media (max-width: 1024px) {
+  .small-text,
+  .large-text {
+    margin-left: -40px;
+  }
+
+  .cultura-title {
+    font-size: 44px;
+  }
+
+  .banner-description {
+    font-size: 1.5em;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .latomie-title {
+    font-size: 40px !important;
+  }
+
+  .latomie-desc {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .santa-lucia-content {
+    padding: 0 15px;
+  }
+
+  .small-text,
+  .large-text {
+    font-size: 28px;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+
+  .large-text {
+    font-size: 32px;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .santa-lucia-text {
+    font-size: 1rem;
+  }
+
+  .saline-title {
+    font-size: 36px;
+  }
+
+  .saline-text {
+    font-size: 18px;
+  }
+
+  .saline-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner-content {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    text-align: center;
+  }
+
+  .cultura-title {
+    font-size: 36px;
+  }
+
+  .banner-description {
+    font-size: 1.2em;
+  }
+
+  .latomie-title {
+    font-size: 36px !important;
+  }
+
+  .latomie-img {
+    width: 90%;
+  }
+
+  .latomie-desc {
+    font-size: 1rem;
+    padding: 18px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .small-text {
+    font-size: 20px;
+    margin-top: -60px;
+    margin-left: 0;
+  }
+
+  .large-text {
+    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .santa-lucia-section {
+    padding: 40px 15px;
+  }
+
+  .santa-lucia-text {
+    font-size: 0.95rem;
+  }
+
+  .saline-title {
+    font-size: 28px;
+  }
+
+  .saline-text {
+    font-size: 16px;
+  }
+
+  .cultura-title {
+    font-size: 28px;
+  }
+
+  .banner-description {
+    font-size: 1em;
+    bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .latomie-title {
+    font-size: 30px !important;
+  }
+
+  .latomie-desc {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
 }
 
 /* Stile per la sezione Tradizioni */
@@ -856,12 +1073,108 @@ html, body {
   border-radius: 8px !important;
 }
 
+/* ---------- Responsive Design Tradizioni & Lucia ---------- */
+@media (max-width: 1024px) {
+  .lucia-title,
+  .martirio-title,
+  .occhi-santa-title {
+    font-size: 36px;
+  }
 
+  .lucia-content,
+  .martirio-content,
+  .occhi-santa-desc {
+    font-size: 1rem;
+  }
 
+  .martirio-title {
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .occhi-santa-image {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .lucia-title,
+  .martirio-title,
+  .occhi-santa-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .lucia-content,
+  .martirio-content,
+  .occhi-santa-desc {
+    font-size: 0.95rem;
+    padding: 16px;
+  }
+
+  .martirio-title {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24px;
+    font-size: 28px;
+    width: 90%;
+  }
+
+  .lucia-img,
+  .martirio-img,
+  .occhi-santa-image {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  .banner-tradizioni {
+    padding: 20px;
+  }
+
+  .occhi-santa-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lucia-title,
+  .martirio-title,
+  .occhi-santa-title {
+    font-size: 24px;
+  }
+
+  .lucia-content,
+  .martirio-content,
+  .occhi-santa-desc {
+    font-size: 0.9rem;
+  }
+
+  .martirio-title {
+    font-size: 22px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .occhi-santa-image {
+    width: 100% !important;
+    border-radius: 6px !important;
+  }
+
+  .banner-tradizioni::before {
+    filter: blur(3px) brightness(0.9);
+  }
+}
+
+/* ===== Desktop / normale ===== */
+
+/* Sezione Zuppa */
 .zuppa-section {
   min-height: 100vh;
   width: 100vw;
-  background: #fab53b; /* giallo */
+  background: #fab53b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -886,7 +1199,7 @@ html, body {
 }
 
 .zuppa-desc {
-  color:#4c5052;
+  color: #4c5052;
   font-size: 1.2rem;
   line-height: 1.5;
   margin: 0;
@@ -908,15 +1221,7 @@ html, body {
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 
-
-/* Contenuto del banner */
-.banner-content {
-    text-align: center;
-    color: #EDF7FD; /* Colore del testo bianco */
-    max-width: 80%; /* Imposta una larghezza massima per il contenuto */
-    padding: 20px;
-    font-size: 32px;
-}
+/* Ortigia Fullscreen */
 .ortigia-fullscreen {
   position: relative;
   width: 100vw;
@@ -932,7 +1237,6 @@ html, body {
   position: absolute;
   top: 32px;
   left: 80px;
-  right: auto;
   color: #edf7ed;
   font-family: 'DM Serif Display', serif;
   font-size: 48px;
@@ -946,15 +1250,15 @@ html, body {
 .ortigia-content {
   z-index: 1;
   max-width: 700px;
-
   color: #edf7ed;
   padding: 40px 32px;
   border-radius: 20px;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.6;
-
 }
+
+/* Maniace Section */
 .maniace-section {
   min-height: 100vh;
   width: 100vw;
@@ -996,13 +1300,13 @@ html, body {
   color: #edf7ed;
   font-size: 1.2rem;
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
   max-width: 700px;
- text-align: left;
   padding: 22px 18px;
   border-radius: 14px;
 }
 
+/* Giudecca Section */
 .giudecca-section {
   display: flex;
   flex-direction: row;
@@ -1010,9 +1314,9 @@ html, body {
   min-height: 70vh;
   width: 100vw;
   background: #004F9F;
-  padding: 40px 0 40px 420px; /* aumenta qui per spostare ancora più a destra */
+  padding: 40px 420px 40px 0;
   box-sizing: border-box;
-    margin-top: 90px; /* aggiungi questa riga per abbassare la sezione */
+  margin-top: 90px;
 }
 
 .giudecca-img-col {
@@ -1020,7 +1324,6 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  margin-left: 0;     /* togli o riduci questo valore */
   margin-right: 40px;
   height: 100%;
 }
@@ -1033,11 +1336,12 @@ html, body {
   box-shadow: 0 4px 24px rgba(0,0,0,0.22);
   margin-bottom: 18px;
 }
+
 .giudecca-title {
   color: #edf7ed;
   font-family: 'DM Serif Display', serif;
   font-size: 44px;
-  margin: -80px 0 0 0; /* margine superiore negativo */
+  margin: -80px 0 0;
   text-align: left;
 }
 
@@ -1048,15 +1352,13 @@ html, body {
   line-height: 1.6;
   text-align: left;
   max-width: 600px;
- text-align: left;
   padding: 32px 24px;
   border-radius: 14px;
   margin-right: 40px;
   margin-top: -40px;
 }
 
-
-/* Stile per il footer */
+/* Footer */
 .footer {
   background-color: #1893d1;
   padding: 40px 20px;
@@ -1066,10 +1368,9 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-top: 5px solid #1168bf; /* Linea sottile di separazione */
+  border-top: 5px solid #1168bf;
 }
 
-/* Contenitore delle due colonne */
 .footer-contenuto {
   display: flex;
   justify-content: space-between;
@@ -1077,54 +1378,51 @@ html, body {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* Comportamento responsive */
-  align-items: stretch; /* Allinea le colonne in alto */
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-/* Colonne singole */
 .footer-colonna {
   display: flex;
   flex-direction: column;
-  align-items:flex-start; /* Centra gli elementi all'interno della colonna */
+  align-items: flex-start;
   justify-content: flex-start;
   width: 45%;
   text-align: left;
-  min-height: 350px; /* Altezza minima per evitare colonne troppo corte */
+  min-height: 350px;
 }
 
-/* Titolo e logo */
 .header-block {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra titolo e logo */
+  align-items: center;
   text-align: center;
-  margin-bottom: 40px; /* Spazio uniforme tra logo/titolo e contatti */
+  margin-bottom: 40px;
 }
 
 .header-block h3 {
-  font-size: 36px;
+  font-size: 38px;
+  font-weight: 700;
   margin-bottom: 12px;
   font-family: 'DM Serif Display', serif;
 }
 
 .header-block img {
   display: block;
-  margin: 10px auto 40px auto; /* Centra orizzontalmente */
-  width: 80px; /* Ridotto a 80px per uniformarlo */
+  margin: 10px auto 40px auto;
+  width: 80px;
   height: auto;
 }
 
-
-/* Righe contatto (icona + testo) */
 .contact-item {
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 250px;
-  margin-bottom: 10px; /* Distanza tra le righe di contatto */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Icone */
 .contact-item i {
   font-size: 20px;
   margin-right: 10px;
@@ -1133,44 +1431,19 @@ html, body {
   position: relative;
 }
 
-/* Testo contatti */
 .contact-item span,
 .contact-item a {
   font-size: 16px;
   color: #EDF7FD;
   text-decoration: none;
-  vertical-align: middle; /* Allineamento verticale */
-}
-.footer-colonna {
-    text-align: left; /* Uniforma l'allineamento */
-}
-/* Allineamento verticale dei contatti */
-.footer-colonna .contact-item {
-  margin-top: -5px; /* Rimuove margini extra tra i contatti */
+  vertical-align: middle;
 }
 
-/* Allineamento preciso per i contatti */
-.footer-colonna:last-of-type .contact-item:first-of-type {
-  margin-top: -5px; /* Abbassa leggermente la prima riga dei contatti di Siracusa */
+.contact-item:hover {
+  opacity: 0.8;
+  transform: translateX(5px);
 }
 
-/* Colonna Pro Loco Marzamemi */
-.footer-colonna:first-of-type {
-  margin-bottom: 0px; /* Nessuna distanza extra per Marzamemi */
-  text-align: left;
-}
-
-/* Colonna Pro Loco Siracusa */
-.footer-colonna:last-of-type {
-  margin-top: 0px; /* Nessuna distanza extra per Siracusa */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; /* Allinea verticalmente la colonna con Marzamemi */
-  text-align: left;
-}
-
-/* Footer basso */
 .footer-basso {
   margin-top: 20px;
   text-align: center;
@@ -1190,113 +1463,25 @@ html, body {
   text-decoration: underline;
 }
 
-.contact-item {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.contact-item:hover {
-    opacity: 0.8;
-    transform: translateX(5px); /* Spostamento leggero verso destra */
-}
-
-
-
-.header-block h3 {
-    font-size: 38px; /* Aumentato il font-size per il titolo */
-    font-weight: 700;
-}
-
-.contact-item span, .contact-item a {
-    font-size: 16px; /* Aumentato il font-size per migliorare la leggibilità */
-}
-
-/* Media Queries per dispositivi mobili */
-@media (max-width: 768px) {
-  .footer-contenuto {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Diminuisce lo spazio tra le colonne sui dispositivi mobili */
-  }
-
-  .footer-colonna {
-    width: 80%; /* Le colonne occupano più spazio su dispositivi più piccoli */
-    text-align: center;
-  }
-
-  .contact-item {
-    justify-content: center;
-  }
-
-  .header-block img {
-    width: 70px; /* Riduce le dimensioni del logo sui dispositivi mobili */
-  }
-}
-
-
-
-/* Responsiveness: quando la larghezza della finestra è più piccola di 768px */
-@media (max-width: 768px) {
-  .footer-contenuto {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 0 20px;
-  }
-
-  .footer-colonna {
-      width: 100%; /* Le colonne occupano l'intera larghezza */
-      text-align: center;
-  }
-
-  .header-block img {
-      width: 80px; /* Riduce la larghezza dei loghi sui dispositivi mobili */
-  }
-
-  .contact-item {
-      max-width: 100%;
-      text-align: center;
-  }
-}
-
-
-
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .footer-contenuto {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
-
-    .footer-colonna {
-        align-items: center;
-        width: 80%;
-    }
-
-    .contact-item {
-        justify-content: center;
-    }
-}
-
+/* Sponsor Carousel */
 .sponsor-carousel {
   overflow: hidden;
   background-color: #1893d1;
   padding: 30px 0;
-  text-align: center; /* Centra il contenuto incluso il titolo */
+  text-align: center;
 }
 
 .sponsor-carousel h4 {
-  margin-bottom: 24px; /* Distanza sotto il titolo */
-  color: #EDF7FD; /* colore testo */
+  margin-bottom: 24px;
+  color: #EDF7FD;
   font-weight: bold;
-  font-family: "DM Serif Display", serif;
-  font-size: 2.5rem; /* Aumentato */
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
 }
 
 .sponsor-track {
   display: flex;
-  animation: scroll-sponsors 25s linear infinite; /* durata aumentata da 12s a 30s per rallentare */
+  animation: scroll-sponsors 25s linear infinite;
   justify-content: center;
 }
 
@@ -1320,56 +1505,121 @@ html, body {
   }
 }
 
-
-@keyframes scroll-sponsors {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* Bottone */
-
-/* Stili per il bottone "Torna su" */
+/* Back to Top Button */
 .back-to-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 20px; /* Posizione del bottone in basso */
-    right: 20px;  /* Posizione del bottone a destra */
-    background-color: #edf7ed; /* Colore di sfondo del bottone */
-    color: #004F9F; /* Colore dell'icona */
-    border-radius: 50%; /* Bottone circolare */
-    padding: 10px; /* Distanza attorno all'icona */
-    opacity: 0; /* Il bottone sarà inizialmente invisibile */
-    transition: opacity 0.3s ease; /* Animazione per l'opacità */
-    z-index: 1000; /* Assicura che il bottone sia sopra altri elementi */
-    cursor: pointer; /* Cursore a forma di mano per indicare cliccabile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #edf7ed;
+  color: #004F9F;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  cursor: pointer;
 }
 
-/* Quando si scorre verso il basso e il bottone è visibile */
 .back-to-top.show {
-    opacity: 1; /* Il bottone diventa visibile */
+  opacity: 1;
 }
 
-/* Stile per l'icona della freccia */
 .back-to-top svg {
-    width: 24px; /* Dimensione dell'icona */
-    height: 24px;
-    fill: #81C7EA /* Colore dell'icona */
+  width: 24px;
+  height: 24px;
+  fill: #81C7EA;
 }
 
-/* Cambia colore quando si passa sopra il bottone */
 .back-to-top:hover {
-    background-color: #81C7EA; /* Colore di hover */
+  background-color: #81C7EA;
 }
 
+/* ===== Responsive (<= 768px) ===== */
+@media (max-width: 768px) {
+  .zuppa-title,
+  .maniace-title,
+  .giudecca-title,
+  .ortigia-title {
+    font-size: 32px !important;
+    text-align: center !important;
+    position: static !important;
+    margin-bottom: 20px !important;
+  }
 
+  .zuppa-desc,
+  .maniace-content,
+  .giudecca-content,
+  .ortigia-content {
+    font-size: 1rem;
+    padding: 16px;
+    text-align: left;
+  }
 
+  .zuppa-img,
+  .maniace-img,
+  .giudecca-img,
+  .ortigia-fullscreen .ortigia-content {
+    width: 90% !important;
+    max-width: 100% !important;
+    margin: 0 auto 20px auto !important;
+    display: block;
+  }
 
+  .giudecca-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .giudecca-img-col {
+    align-items: center;
+    margin: 0 auto 20px auto;
+  }
+  .giudecca-content {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-contenuto {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .footer-colonna {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header-block h3 {
+    font-size: 28px;
+  }
+  .header-block img {
+    width: 70px;
+    margin: 0 auto 30px auto;
+  }
+  .contact-item {
+    justify-content: center;
+    font-size: 14px;
+  }
+  .contact-item i {
+    font-size: 18px;
+  }
+  .contact-item span, .contact-item a {
+    font-size: 14px;
+  }
+
+  .sponsor-track a img {
+    height: 40px;
+    margin: 0 16px;
+  }
+  .sponsor-carousel h4 {
+    font-size: 1.5rem;
+  }
+}
 
 
 
