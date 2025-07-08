@@ -568,13 +568,12 @@ html, body {
     
   }
 
-  .hero-text-top {
-    top: 80px; /* alza il testo per fare spazio al titolo */
+.hero-text-top {
+    top: 50px; /* alza ancora di più il testo */
     left: 15px;
     max-width: 90%;
   }
 }
-
 
 /* Migliora leggibilità testo santuario su mobile */
 @media (max-width: 768px) {
