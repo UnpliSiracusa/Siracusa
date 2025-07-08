@@ -564,27 +564,29 @@ html, body {
 }
 @media (max-width: 480px) {
   #castello-svevo-fullscreen.hero-castello {
-    padding-top: 20px;
-    padding-bottom: 120px; /* più spazio sotto per il titolo */
+    padding-top: 100px;
+    padding-bottom: 160px; /* Più spazio sotto per il titolo */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .hero-text-top {
-    top: 10px; /* alza il testo */
+    position: static; /* NON assoluto su mobile */
     font-size: 16px;
-    max-width: 90%;
-    left: 15px;
-    right: 15px;
+    padding: 0 15px;
+    max-width: 100%;
     z-index: 2;
   }
 
   .hero-title-bottom-left {
-    bottom: 10px; /* abbassa il titolo */
-    left: 15px;
+    position: static; /* NON assoluto su mobile */
+    margin-top: 20px;
+    padding: 0 15px;
     z-index: 1;
   }
 
   .hero-title-bottom-left h2 {
-    font-size: 28px; /* rimpicciolisce il titolo */
+    font-size: 28px;
     line-height: 1.2;
     margin: 0;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
