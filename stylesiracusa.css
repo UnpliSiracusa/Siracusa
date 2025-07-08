@@ -569,7 +569,7 @@ html, body {
   }
 
 .hero-text-top {
-    top: 50px; /* alza ancora di più il testo */
+    top: 30px; /* alza ancora di più il testo */
     left: 15px;
     max-width: 90%;
   }
