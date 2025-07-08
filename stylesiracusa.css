@@ -563,32 +563,35 @@ html, body {
   }
 }
 @media (max-width: 480px) {
+  #castello-svevo-fullscreen.hero-castello {
+    padding-top: 20px;
+    padding-bottom: 120px; /* più spazio sotto per il titolo */
+  }
+
   .hero-text-top {
-    top: 20px; /* alzato il testo */
-    left: 15px;
-    right: 15px;
+    top: 10px; /* alza il testo */
     font-size: 16px;
     max-width: 90%;
+    left: 15px;
+    right: 15px;
     z-index: 2;
   }
 
   .hero-title-bottom-left {
-    bottom: 10px; /* abbassato il titolo */
+    bottom: 10px; /* abbassa il titolo */
     left: 15px;
     z-index: 1;
   }
 
   .hero-title-bottom-left h2 {
-    font-size: 28px; /* titolo più piccolo */
+    font-size: 28px; /* rimpicciolisce il titolo */
     line-height: 1.2;
     margin: 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  }
-
-  #castello-svevo-fullscreen.hero-castello {
-    padding-bottom: 80px; /* spazio in fondo per evitare sovrapposizione */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   }
 }
+
+
 
 /* Migliora leggibilità testo santuario su mobile */
 @media (max-width: 768px) {
